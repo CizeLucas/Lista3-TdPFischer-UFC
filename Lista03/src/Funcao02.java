@@ -26,6 +26,8 @@ public class Funcao02 {
 			vector[i]=Integer.parseInt(scan.nextLine());
 
 		System.out.println("A media dos numeros do vetor eh: " + CalcAvg(vector));
+		
+		scan.close();
 	}
 
 }

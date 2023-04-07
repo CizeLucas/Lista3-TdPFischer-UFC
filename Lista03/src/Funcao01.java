@@ -24,6 +24,8 @@ public class Funcao01 {
 			vector[i]=Integer.parseInt(scan.nextLine());
 
 		System.out.println("A soma dos numeros do vetor eh: " + SumVector(vector));
+		
+		scan.close();
 	}
 
 }

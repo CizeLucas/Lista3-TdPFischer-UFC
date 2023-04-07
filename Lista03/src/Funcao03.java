@@ -31,8 +31,7 @@ public class Funcao03 {
 
 		System.out.printf("A media ponderada dos numeros do vetor eh: %.2f", WeightedAvg(vector, weights));
 		
-		
-
+		scan.close();
 	}
 
 }

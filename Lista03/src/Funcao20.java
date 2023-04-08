@@ -3,7 +3,7 @@ public class Funcao20 {
 
 	public static int[] ShortenVector(int SizeVector, int vector[], int vectorMatrix[][]) {
 		int sizeVector = vector.length;
-		int vectorMatrix[][] = new int[sizeVector][sizeVector];
+		//int vectorMatrix[][] = new int[sizeVector][sizeVector];
 		
 		for(int i=0; i<sizeVector; i++) {
 			System.out.print(i+" ");

@@ -1,17 +1,18 @@
+import java.util.Scanner;
 
 public class Funcao20 {
-
-	public static int[] ShortenVector(int SizeVector, int vector[], int vectorMatrix[][]) {
+	
+	public static int[] ShortenVector(int SizeVector, int vector[]) {
 		int sizeVector = vector.length;
-		//int vectorMatrix[][] = new int[sizeVector][sizeVector];
+		int vectorMatrix[][] = new int[sizeVector][sizeVector];
 		
 		for(int i=0; i<sizeVector; i++) {
-			System.out.print(i+" ");
+			//System.out.print(i+" ");
 			for(int j=0; j<(sizeVector-i); j++) {
-				System.out.print(vector[j]);
+				//System.out.print(vector[j]);
 				vectorMatrix[i][j]=vector[j];
 			}
-			System.out.println();
+			//System.out.println();
 		}
 		
 		int reducedVector[] = new int[1];
@@ -21,10 +22,24 @@ public class Funcao20 {
 	}
 	
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int vectorSize;
 		
-		int reducedVector[] = new int[5];
-		reducedVector.clone();
-
+		System.out.print("Insira o tamamho desejado para o vetor: ");
+		vectorSize = Integer.parseInt(scan.nextLine());
+		
+		int vector[] = new int[vectorSize];
+		
+		for(int i=0; i<vector.length; i++) {
+			System.out.print("Insira um numero: ");
+			vector[i] = Integer.parseInt(scan.nextLine());
+		}
+		
+		int finalVector[] = ShortenVector(vector.length, vector );
+		
+		System.out.printf("O conteudo do vertor inserido acima reduzido para uma posicao eh: %d", finalVector[0]);
+		
+		scan.close();
 	}
 
 }

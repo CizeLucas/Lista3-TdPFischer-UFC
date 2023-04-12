@@ -29,7 +29,7 @@ public class Funcao04 {
 		int vector1[] = new int[sizeVector];
 		
 		for(int i=0; i<sizeVector; i++) {
-			System.out.print("Insira o numero: ");
+			System.out.print("Insira um numero p/ povoar o primeiro vetor: ");
 			vector1[i]=Integer.parseInt(scan.nextLine());
 		}
 
@@ -39,7 +39,7 @@ public class Funcao04 {
 		int vector2[] = new int[sizeVector];
 		
 		for(int i=0; i<sizeVector; i++) {
-			System.out.print("Insira o numero: ");
+			System.out.print("Insira um numero p/ povoar o segundo vetor: ");
 			vector2[i]=Integer.parseInt(scan.nextLine());
 		}
 		

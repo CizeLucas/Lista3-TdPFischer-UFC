@@ -3,15 +3,13 @@ import java.util.Scanner;
 public class Funcao02 {
 
 	public static float CalcAvg(int vector[]) {
-		float avg;
 		float sum=0;
 		int sizeVector=vector.length;
 		
 		for(int i=0; i<sizeVector; i++)
 			sum = sum + vector[i];
 		
-		avg=sum/sizeVector;
-		return avg;
+		return sum/sizeVector;
 	}
 	
 	public static void main(String[] args) {

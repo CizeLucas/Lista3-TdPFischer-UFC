@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Funcao19 {
-
 	
 	public static boolean CheckPerfectNumber(int num) {
 		int sumDeviders=0;

@@ -16,7 +16,7 @@ public class Funcao18 {
 		Scanner sacaner = new Scanner(System.in);
 		
 		System.out.print("Insira a quantia inicial de dinheiro: ");
-		double totalMoney = Double.parseDouble(sacaner.nextLine());
+		double initialMoney = Double.parseDouble(sacaner.nextLine());
 		
 		System.out.print("Insira a % de juros em que o dinheiro ficou exposto: ");
 		double rate = Double.parseDouble(sacaner.nextLine());
@@ -24,7 +24,7 @@ public class Funcao18 {
 		System.out.print("Insira a quantidade de tempo em que o dinheiro ficou exposto: ");
 		int time = Integer.parseInt(sacaner.nextLine());
 
-		System.out.printf("\nNessas condicoes, ao final do periodo,\n%.2fR$ serao convertidos em: %.2fR$",totalMoney, CompoundInterest(totalMoney, rate, time));
+		System.out.printf("\nNessas condicoes, ao final do periodo,\n%.2f R$ serao convertidos em: %.2f R$",initialMoney, CompoundInterest(initialMoney, rate, time));
 
 		sacaner.close();
 	}
